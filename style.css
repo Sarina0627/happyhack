@@ -1,0 +1,413 @@
+/* リセットcss */
+*{
+  padding: 0px;
+  margin: 0px;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+
+.clearfix::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+
+/* @font-face{
+  font-family: 'Futura';
+  src: url(/fonts/Futura-Bol.ttf) format('truetype'),
+       url(/fonts/Futura-BolObl.ttf) format('truetype'),
+       url(/fonts/Futura-Boo.ttf) format('truetype'),
+       url(/fonts/Futura-BooObl.ttf) format('truetype'),
+       url(/fonts/Futura-LigObl.ttf) format('truetype');
+} */
+
+/* メインビジュアル */
+
+header{
+  width:1440px;
+  height:790px;
+}
+
+header .main-visual{
+  width:1440px;
+  height:790px;
+  background-image: url(images/background4.jpg);
+  background-size: cover;
+
+}
+
+header .main-visual #logo{
+  width:902px;
+  height:239px;
+  display:block;
+  margin:0px auto;
+  padding-top: 177px;
+}
+
+header p{
+  font-family: 'Futura-LigObl';
+  font-size: 45px;
+  color: #ffffff;
+  padding-top: 35px;
+  text-align: center;
+}
+
+
+nav{
+  overflow: hidden;
+  margin-top: 30px;
+  margin-right: 63px;
+  float: right;
+}
+
+nav a{
+  text-decoration: none;
+  display: block;
+  font-family: 'Futura-Boo';
+  font-size: 26px;
+  padding: 0 33px;
+  color: #ffffff;
+}
+
+nav li{
+  list-style-type: none;
+  float: left;
+}
+
+nav a:last-of-type{
+  padding-right: 0px;
+}
+
+nav a:hover{
+  color:#3d5cdb;
+  transition: 0.7s;
+}
+
+/* メインビジュアル */
+
+.introduction{
+  width: 100%;
+  height:auto;
+}
+
+.intro-wrapper{
+  width: 1040px;
+  height:auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.introduction .title{
+  color:#3d5cdb;
+  font-family:'Futura-Boo';
+  font-size: 54px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.intro1{
+  margin-top: 60px;
+  margin-bottom: 95px;
+}
+
+.intro2{
+  margin-bottom: 75px;
+}
+
+.intro-wrapper .intro-img1{
+  width:500px;
+  height:333px;
+  float: left;
+}
+
+.intro-wrapper p{
+  font-family: 'ヒラギノ角ゴシック Pro W3';
+  font-weight:30;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-feature-settings: "palt";
+
+}
+
+.intro-wrapper .intro-right{
+  width: 400px;
+  height:333px;
+  float: left;
+  padding-left: 90px;
+}
+
+.intro-wrapper .intro-right p{
+  text-align: left;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.intro-wrapper .intro-left{
+  height:333px;
+  width: 400px;
+  float: left;
+  margin: 0 48px;
+}
+
+.intro-wrapper .intro-img2{
+  width:500px;
+  height:333px;
+  float: right;
+}
+
+.intro-wrapper .intro-left p{
+  text-align: left;
+  line-height: 30px;
+  padding-top: 33px;
+  padding-bottom: 35px;
+}
+
+.introduction .add-button{
+  text-decoration: none;
+  padding: 10px 45px;
+  border-radius: 12px;
+  margin-left: 115px;
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.introduction .button1{
+  color:white;
+  background-color: #3d5cdb;
+  border: 1px solid #3d5cdb;
+}
+
+.introduction .button2{
+  color:white;
+  background-color: #ffbf00;
+  border: 1px solid #ffbf00;
+}
+
+.introduction .add-button:hover{
+  box-shadow: 0 0 10px rgba(46,45,45,0.5);
+}
+
+/* courses */
+.courses{
+  background: rgba(186, 213, 245,0.7);
+  width: 100%;
+  height:auto;
+}
+
+.courses .title{
+  color:#3d5cdb;
+  font-family:'Futura-Boo';
+  font-size: 54px;
+  text-align: center;
+  padding-top: 45px;
+  margin-bottom: 75px;
+}
+
+.card-top{
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.courses-card1{
+  width: 240px;
+  height: 340px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 33px;
+}
+
+.courses-card1:last-child{
+  margin-right: 0px;
+}
+
+.card-bottom{
+  width: 760px;
+  margin: 0 auto;
+}
+
+.courses-card2{
+  width: 240px;
+  height: 340px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 58px;
+}
+
+.courses-card2:last-child{
+  margin-right: 0px;
+}
+
+.course_img1{
+  width:100px;
+  height:auto;
+  display: block;
+  margin: 30px auto 0px;
+}
+
+.course_img2{
+  width:100px;
+  height:auto;
+  display: block;
+  margin: 54px auto 0px;
+}
+
+.course_img3{
+  width:100px;
+  height:auto;
+  display: block;
+  margin: 60px auto 0px;
+
+}
+
+.course-name{
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color:#203A5B;
+  margin-bottom: 30px;
+}
+
+.course-button{
+  font-size: 13px;
+  font-weight: bold;
+  padding: 13px 30px;
+  margin-left: 31px;
+  text-decoration: none;
+}
+
+.course-button:hover{
+  box-shadow: 0 0 10px rgba(46,45,45,0.5);
+}
+
+.course-name1{
+  margin-top: 35px;
+}
+
+
+.course1{
+  color:#ffffff;
+  border: 1px solid #f16629;
+  background-color: #f16629;
+  border-radius: 12px;
+}
+
+
+.course-name2{
+ margin-top: 23px;
+}
+
+.course2{
+  color:#ffffff;
+  border: 1px solid #29a9df;
+  background-color: #29a9df;
+  border-radius: 12px;
+}
+
+.course-name3{
+ margin-top: 53px;
+}
+
+.course3{
+  color:#ffffff;
+  border: 1px solid #333333;
+  background-color: #333333;
+  border-radius: 12px;
+}
+
+.course-name4{
+ margin-top: 53px;
+}
+
+.course4{
+  color:#ffffff;
+  border: 1px solid #ff5252;
+  background-color: #ff5252;
+  border-radius: 12px;
+}
+
+.course-name5{
+ margin-top: 35px;
+}
+
+.course5{
+  color:#ffffff;
+  border: 1px solid #fed700;
+  background-color: #fed700;
+  border-radius: 12px;
+}
+
+.course-name6{
+ margin-top: 55px;
+}
+
+.course6{
+  color:#ffffff;
+  border: 1px solid #fe7535;
+  background-color: #fe7535;
+  border-radius: 12px;
+}
+
+.course-name7{
+ margin-top: 44px;
+}
+
+.course7{
+  color:#ffffff;
+  border: 1px solid #72cfdd;
+  background-color: #72cfdd;
+  border-radius: 12px;
+}
+/* images */
+
+.images{
+  width:100%;
+  height:400px;
+}
+
+.images .title{
+  color:#3d5cdb;
+  font-family:'Futura-Boo';
+  font-size: 54px;
+  text-align: center;
+  padding-top: 45px;
+  margin-bottom: 75px;
+}
+
+/* access */
+
+.access{
+  width: 100%;
+  height:640px;
+}
+
+.map{
+  display: block;
+  margin: 0 auto;
+}
+
+.access .title{
+  color:#3d5cdb;
+  font-family:'Futura-Boo';
+  font-size: 54px;
+  text-align: center;
+  padding-top: 95px;
+  padding-bottom: 45px;
+}
+
+/* footer */
+.copy{
+  color:#3d5cdb;
+  line-height: 60px;
+  text-align: center;
+  font-family: 'Futura-Boo';
+}
