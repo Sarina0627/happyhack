@@ -450,6 +450,8 @@ nav a:hover{
   font-family: 'Futura-Boo';
 }
 
+/* フワッとアニメーション */
+
 .fuwatAnime {
  -webkit-animation-fill-mode:both;
  -ms-animation-fill-mode:both;
