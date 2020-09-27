@@ -194,10 +194,16 @@ nav a:hover{
 }
 
 /* courses */
-.courses{
-  background: rgba(186, 213, 245,0.7);
+#particles-js{
+  background-color: rgba(186, 213, 245,0.7);
   width: 100%;
-  height:auto;
+  height:935px;
+  position: relative;
+}
+
+.courses-wrapper{
+  position: absolute;
+  left: 210px;
 }
 
 .courses .title{
@@ -206,7 +212,7 @@ nav a:hover{
   font-size: 54px;
   text-align: center;
   padding-top: 45px;
-  margin-bottom: 75px;
+  margin-bottom: 60px;
 }
 
 .card-top{
@@ -372,6 +378,7 @@ nav a:hover{
 .images{
   width:100%;
   height:400px;
+  position: relative;
 }
 
 .images .title{
@@ -382,6 +389,37 @@ nav a:hover{
   padding-top: 45px;
   margin-bottom: 75px;
 }
+
+.slider-wrapper{
+  width: 1160px;
+}
+
+.prev{
+  position: absolute;
+  top: 85px;
+  left:-23px;
+  z-index:2;
+  font-size: 18px;
+}
+
+.next{
+  position: absolute;
+  top: 85px;
+  right:-23px;
+  z-index:2;
+  font-size: 18px;
+}
+
+.slider{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slider-image{
+  width:290px;
+  height:190px;
+}
+
 
 /* access */
 
@@ -410,4 +448,25 @@ nav a:hover{
   line-height: 60px;
   text-align: center;
   font-family: 'Futura-Boo';
+}
+
+.fuwatAnime {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1.5s;
+ -ms-animation-duration:1.5s;
+ animation-duration:1.5s;
+ -webkit-animation-name: fuwatAnime;
+ -ms-animation-name: fuwatAnime;
+ animation-name: fuwatAnime;
+ visibility: visible !important;
+}
+@-webkit-keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }
