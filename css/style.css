@@ -17,28 +17,15 @@
    clear: both;
 }
 
-/* @font-face{
-  font-family: 'Futura';
-  src: url(/fonts/Futura-Bol.ttf) format('truetype'),
-       url(/fonts/Futura-BolObl.ttf) format('truetype'),
-       url(/fonts/Futura-Boo.ttf) format('truetype'),
-       url(/fonts/Futura-BooObl.ttf) format('truetype'),
-       url(/fonts/Futura-LigObl.ttf) format('truetype');
-} */
-
 /* メインビジュアル */
 
-header{
-  width:1440px;
-  height:790px;
-}
 
 header .main-visual{
   width:1440px;
   height:790px;
   background-image: url(images/background4.jpg);
   background-size: cover;
-
+  background-position: center;
 }
 
 header .main-visual #logo{
@@ -88,7 +75,32 @@ nav a:hover{
   transition: 0.7s;
 }
 
-/* メインビジュアル */
+@media screen and (max-width:479px){
+  .all{
+    width: 100%;
+  }
+
+  header nav{
+    display: none;
+  }
+
+  header .main-visual{
+    width: 100%;
+  }
+
+  header .main-visual #logo{
+    width: 280px;
+    height: auto;
+    padding-top:350px;
+  }
+
+  header p{
+    font-size: 20px;
+    padding-top: 25px;
+  }
+}
+
+/* イントロダクション */
 
 .introduction{
   width: 100%;
@@ -155,6 +167,7 @@ nav a:hover{
   margin: 0 48px;
 }
 
+
 .intro-wrapper .intro-img2{
   width:500px;
   height:333px;
@@ -166,6 +179,17 @@ nav a:hover{
   line-height: 30px;
   padding-top: 33px;
   padding-bottom: 35px;
+}
+
+.intro-wrapper .responsive-intro-left p{
+  text-align: left;
+  line-height: 30px;
+  padding-top: 33px;
+  padding-bottom: 35px;
+}
+
+.intro-wrapper .responsive-intro-left{
+  display: none;
 }
 
 .introduction .add-button{
@@ -193,17 +217,89 @@ nav a:hover{
   box-shadow: 0 0 10px rgba(46,45,45,0.5);
 }
 
+
+@media screen and (max-width:479px){
+ .introduction .title{
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  .intro-wrapper p{
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .intro-wrapper{
+    width: 100%;
+  }
+
+  .intro-wrapper .intro-img1{
+    float: none;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .intro-wrapper .intro-right{
+    float: none;
+    padding-left: 0;
+    padding-bottom: 30px;
+    margin: 30px auto;
+    width: 83%;
+  }
+
+  .intro-wrapper .intro-left{
+    float: none;
+    display: none;
+  }
+
+  .intro-wrapper .intro-img2{
+    float: none;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: -110px;
+  }
+
+  .intro-wrapper .responsive-intro-left{
+    display: block;
+    margin: 30px auto;
+    width: 83%;
+  }
+
+  .introduction .add-button{
+    padding: 10px 45px;
+    border-radius: 12px;
+    font-size: 17px;
+    margin-left:85px;
+  }
+}
+
 /* courses */
+.courses{
+  position: relative;
+  width: 100%;
+  height:935px;
+}
+
 #particles-js{
   background-color: rgba(186, 213, 245,0.7);
   width: 100%;
   height:935px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
 }
 
 .courses-wrapper{
   position: absolute;
-  left: 210px;
+  left: 110px;
 }
 
 .courses .title{
@@ -214,11 +310,6 @@ nav a:hover{
   padding-top: 45px;
   margin-bottom: 60px;
 }
-
-/* .card-top{
-  width: 1020px;
-  margin: 0 auto;
-} */
 
 .courses-card1{
   width: 240px;
@@ -233,11 +324,6 @@ nav a:hover{
   margin-right: 0px;
 }
 
-/* .card-bottom{
-  width: 760px;
-  margin: 0 auto;
-}  */
-
 .courses-card2{
   width: 240px;
   height: 340px;
@@ -251,17 +337,12 @@ nav a:hover{
   margin-right: 0px;
 }
 
-.card-top{
+.card-container{
+  max-width: 1200px;
   display: flex;
   justify-content: center;
-}
-
-
-
-
-.card-bottom{
-  display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .course_img1{
@@ -384,6 +465,111 @@ nav a:hover{
   background-color: #72cfdd;
   border-radius: 12px;
 }
+
+@media screen and (max-width:479px){
+  .courses{
+     width: 100%;
+     height:1300px;
+     margin-bottom: 50px;
+  }
+
+  #particles-js{
+    width: 100%;
+    height:1350px;
+  }
+
+  .courses-wrapper{
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+
+
+
+  .courses .title{
+    font-size: 35px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .card-top{
+    display: block;
+  }
+
+  .card-bottom{
+    display: block;
+  }
+
+  .courses-card1{
+    padding-top: 30px;
+    width: 160px;
+    height: 220px;
+  }
+
+   .courses-card2{
+    padding-top: 30px;
+    width: 160px;
+    height: 220px;
+  }
+
+   .courses-card3{
+    padding-top: 30px;
+    width: 160px;
+    height: 220px;
+  }
+
+  .course_img1{
+    width:80px;
+    height:120px;
+    display: block;
+    margin: 0px auto 0px;
+  }
+
+  .course_img2{
+    width:90px;
+    height:auto;
+    display: block;
+    margin: 15px auto 0px;
+  }
+
+  .course_img3{
+    width:100px;
+    height:90px;
+    display: block;
+    margin: 10px auto 40px;
+  }
+
+  .course-name{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color:#203A5B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .course-button{
+    font-size: 3px;
+    letter-spacing: -1px;
+    padding: 13px 7px;
+    margin-left: 34px;
+    border-radius: 30px;
+  }
+
+  .card-container{
+  width: 360px;
+  margin: 0 auto;
+  padding-left: 17px;
+
+  }
+
+  .responsive-card{
+  margin-top: -25px;
+  }
+}
 /* images */
 
 .images{
@@ -399,10 +585,6 @@ nav a:hover{
   text-align: center;
   padding-top: 45px;
   margin-bottom: 75px;
-}
-
-.slider-wrapper{
-  width: 1160px;
 }
 
 .prev{
@@ -431,6 +613,40 @@ nav a:hover{
   height:190px;
 }
 
+@media screen and (max-width:479px){
+   .images .title{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+
+  .slider{
+    width: 330px;
+    margin: 0 auto;
+    background-color: aqua;
+  }
+
+  .slider-image{
+    width:330px;
+    height:auto;
+  }
+
+  .prev{
+    position: absolute;
+    top: 90px;
+    left:-23px;
+    z-index:2;
+    font-size: 18px;
+  }
+
+  .next{
+    position: absolute;
+    top: 90px;
+    right:-23px;
+    z-index:2;
+    font-size: 18px;
+  }
+}
 
 /* access */
 
@@ -442,6 +658,8 @@ nav a:hover{
 .map{
   display: block;
   margin: 0 auto;
+  width:600px;
+  height:400px;
 }
 
 .access .title{
@@ -451,6 +669,26 @@ nav a:hover{
   text-align: center;
   padding-top: 95px;
   padding-bottom: 45px;
+}
+
+@media screen and (max-width:479px){
+  .access{
+    width: 100%;
+    height:auto;
+    margin-bottom: 30px;
+  }
+
+  .access .title{
+    font-size: 35px;
+    margin-top: 10px;
+    padding-top: 55px;
+    padding-bottom: 25px;
+  }
+
+  .map{
+    width: 100%;
+    height: 300px;
+  }
 }
 
 /* footer */
